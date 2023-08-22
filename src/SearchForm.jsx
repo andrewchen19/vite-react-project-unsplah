@@ -1,3 +1,4 @@
+import { useEffect, useRef } from "react";
 import { useGlobalContext } from "./context";
 
 const SearchForm = () => {
@@ -17,6 +18,12 @@ const SearchForm = () => {
     setSearchText(searchValue);
   };
 
+  const inputRef = useRef(null);
+
+  useEffect(() => {
+    inputRef.current.focus();
+  }, []);
+
   return (
     <section>
       <h1 className="title">unsplash images</h1>
@@ -25,6 +32,7 @@ const SearchForm = () => {
           type="text"
           name="search"
           placeholder="cat"
+          ref={inputRef}
           className={
             isDarkTheme
               ? "form-input search-input dark-theme"

@@ -71,6 +71,11 @@ body {
   color: var(--grey-900);
   transition: var(--transition);
 }
+/* dark-theme */
+.dark-theme {
+  background-color: #333;
+  color: #f0f0f0;
+}
 
 p {
   margin: 0;
@@ -107,28 +112,6 @@ h4 {
 h5 {
   font-size: clamp(0.875rem, 1.5vw, 1.5rem); /* Tiny heading */
 }
-
-/* BIGGER FONTS */
-/* h1 {
-  font-size: clamp(3rem, 6vw, 6rem);
-}
-
-h2 {
-  font-size: clamp(2.5rem, 5vw, 5rem);
-}
-
-h3 {
-  font-size: clamp(2rem, 4vw, 4rem);
-}
-
-h4 {
-  font-size: clamp(1.5rem, 3vw, 3rem);
-}
-
-h5 {
-  font-size: clamp(1rem, 2vw, 2rem);
-}
- */
 
 .text {
   margin-bottom: 1.5rem;
@@ -312,7 +295,6 @@ ul {
 
 .search-input {
   border-color: var(--grey-300);
-  color: var(--grey-900);
   font-size: 1.25rem;
   border-radius: 0;
   transition: var(--transition);
@@ -351,10 +333,4 @@ ul {
   .image-container {
     grid-template-columns: 1fr 1fr 1fr;
   }
-}
-
-/* dark-theme */
-.dark-theme {
-  background-color: #333;
-  color: #f0f0f0;
 }
