@@ -11,7 +11,7 @@ const SearchForm = () => {
     // console.log(e.target.elements);
     const searchValue = e.target.elements.search.value;
 
-    // 沒有輸入的 input時，return empty string
+    // input 沒有輸入任何內容時，return empty string
     if (!searchValue) return;
 
     // console.log(searchValue);
